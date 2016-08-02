@@ -1,0 +1,6 @@
+C:\Users\Mateusz\Desktop\CageMaster\CageMaster\bin\Debug\CageMaster.exe.config
+C:\Users\Mateusz\Desktop\CageMaster\CageMaster\bin\Debug\CageMaster.exe
+C:\Users\Mateusz\Desktop\CageMaster\CageMaster\bin\Debug\CageMaster.pdb
+C:\Users\Mateusz\Desktop\CageMaster\CageMaster\obj\Debug\CageMaster.csprojResolveAssemblyReference.cache
+C:\Users\Mateusz\Desktop\CageMaster\CageMaster\obj\Debug\CageMaster.exe
+C:\Users\Mateusz\Desktop\CageMaster\CageMaster\obj\Debug\CageMaster.pdb
