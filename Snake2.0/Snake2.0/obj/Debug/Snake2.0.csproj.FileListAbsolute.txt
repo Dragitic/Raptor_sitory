@@ -1,0 +1,6 @@
+C:\Users\Mateusz\Desktop\Repo\Snake2.0\Snake2.0\bin\Debug\Snake2.0.exe.config
+C:\Users\Mateusz\Desktop\Repo\Snake2.0\Snake2.0\bin\Debug\Snake2.0.exe
+C:\Users\Mateusz\Desktop\Repo\Snake2.0\Snake2.0\bin\Debug\Snake2.0.pdb
+C:\Users\Mateusz\Desktop\Repo\Snake2.0\Snake2.0\obj\Debug\Snake2.0.csprojResolveAssemblyReference.cache
+C:\Users\Mateusz\Desktop\Repo\Snake2.0\Snake2.0\obj\Debug\Snake2.0.exe
+C:\Users\Mateusz\Desktop\Repo\Snake2.0\Snake2.0\obj\Debug\Snake2.0.pdb
