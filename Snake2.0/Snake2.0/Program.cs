@@ -13,7 +13,6 @@ namespace Snake2._0
     class Program
     {
         private static ConsoleKey _keyPressed;
-
         static void Main(string[] args)
         {
             Console.Title = "*** Crashed! *** Length: " + "     Hit 'q' to quit, or 'r' to retry!";
@@ -46,11 +45,14 @@ namespace Snake2._0
 
                 _keyPressed = snakeControl.SnakeControlKeys(keyInfo);
 
-                var moveSnake = snakeControl.MoveSnake(completePlayground, _keyPressed);
-                completePlayground = moveSnake.OfType<int[][]>().ElementAt(0);
+                //var moveSnake = snakeControl.MoveSnake(completePlayground, _keyPressed);
+                //completePlayground = moveSnake.OfType<int[][]>().ElementAt(0);
 
-                var currentSnakePosition = moveSnake.OfType<List<int>>().ElementAt(0);
-                snakeBehavior.SnakeHitsBoundarys(completePlayground, currentSnakePosition);
+                //var currentSnakePosition = moveSnake.OfType<List<int>>().ElementAt(0);
+                //snakeBehavior.SnakeHitsBoundarys(completePlayground, currentSnakePosition);
+
+                var moveSnake = snakeControl.MoveSnake(completePlayground, _keyPressed).AsParallel();
+                //completePlayground = moveSnake.OfType<int[][]>();
 
                 var display = displayArena.DisplayArena(completePlayground);
 
@@ -65,7 +67,7 @@ namespace Snake2._0
             return completePlayground;
         }
 
-        private static void PrimarySnakeSetUp(out IDisplayArena displayArena, out List<int> snakePosition, 
+        private static void PrimarySnakeSetUp(out IDisplayArena displayArena, out List<int> snakePosition,
             out int[][] completePlayground, out ISnakeBehavior snakeBehavior)
         {
             ICreateGameArena createGameArena = new CreateGameArena();
