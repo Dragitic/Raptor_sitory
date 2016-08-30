@@ -7,7 +7,7 @@ namespace Snake2._0.Snake.Behavior
         SnakePosition SetSnakeStartPosition(FieldType[][] playGround);
         FieldType[][] SetCompletePlayGround();
         ISnakeControl SnakeControl();
-        void SnakeNextParts();
         void SnakeHitsBoundarys();
+        void SnakeNextParts(Meal.Meal meal);
     }
 }

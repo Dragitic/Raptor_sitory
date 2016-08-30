@@ -23,14 +23,14 @@ namespace Snake2._0
             return _playGround;
         }
 
-        public MealPosition SetMealOnArena(FieldType[][] playGround)
-        {
-            _playGround = playGround;
-            RandomizeMealPosition();
-            CheckIfMealPositionIsIrrelevant();
-            AddMealToArena();
-            return _mealPosition;
-        }
+        //public MealPosition SetMealOnArena(FieldType[][] playGround)
+        //{
+        //    _playGround = playGround;
+        //    RandomizeMealPosition();
+        //    CheckIfMealPositionIsIrrelevant();
+        //    AddMealToArena();
+        //    return _mealPosition;
+        //}
 
         public void AddMealToArena()
         {
@@ -55,19 +55,19 @@ namespace Snake2._0
             }
         }
 
-        private void CheckIfMealPositionIsIrrelevant()
-        {
-            if (_playGround[_mealPosition.HeadCoordinates.X][_mealPosition.HeadCoordinates.Y] != FieldType.Empty)
-            {
-                RandomizeMealPosition();
-            }
-        }
+        //private void CheckIfMealPositionIsIrrelevant()
+        //{
+        //    if (_playGround[_mealPosition.HeadCoordinates.X][_mealPosition.HeadCoordinates.Y] != FieldType.Empty)
+        //    {
+        //        RandomizeMealPosition();
+        //    }
+        //}
 
-        private void RandomizeMealPosition()
-        {
-            int xPosition = _random.Next(_playGround.Length);
-            int yPosition = _random.Next(_playGround[0].Length);
-            _mealPosition.HeadCoordinates = new Coordinates(xPosition, yPosition);
-        }
+        //private void RandomizeMealPosition()
+        //{
+        //    int xPosition = _random.Next(_playGround.Length);
+        //    int yPosition = _random.Next(_playGround[0].Length);
+        //    _mealPosition.HeadCoordinates = new Coordinates(xPosition, yPosition);
+        //}
     }
 }

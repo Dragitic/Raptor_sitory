@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using Snake2._0.DisplayGame;
+using Snake2._0.Meal;
 using Snake2._0.Snake;
 using Snake2._0.Snake.Behavior;
 
@@ -21,6 +22,7 @@ namespace Snake2._0
 
             ISnakeControl snakeControl = new SnakeControl();
             IArenaRules arenaRules = new ArenaRules();
+            IMealBehavior mealBehavior = new MealBehavior();
             IDisplayArena displayArena;
             ISnakeBehavior snakeBehavior;
             SnakePosition snakePosition;
@@ -30,11 +32,11 @@ namespace Snake2._0
             PrimarySnakeSetUp(out displayArena, out snakePosition, out completePlayground, out snakeBehavior, arenaRules);
             snakeControl.SnakeHeadCoordinates(snakePosition);
 
-            DisplayMovingSnake(streamOut, snakeControl, displayArena, completePlayground, snakeBehavior, snakePosition, arenaRules);
+            DisplayMovingSnake(streamOut, snakeControl, displayArena, completePlayground, snakeBehavior, snakePosition, mealBehavior);
         }
         private static void DisplayMovingSnake(StreamWriter streamOut, ISnakeControl snakeControl,
             IDisplayArena displayArena, FieldType[][] completePlayground, ISnakeBehavior snakeBehavior,
-            SnakePosition snakePosition, IArenaRules arenaRules)
+            SnakePosition snakePosition, IMealBehavior mealBehavior)
         {
             var keyInfo = Console.ReadKey(true);
 
@@ -52,7 +54,7 @@ namespace Snake2._0
 
                 snakeControl.MoveSnake(completePlayground, _keyPressed);
 
-                CheckIfSnakeAteMeal(completePlayground, snakeBehavior, snakePosition, arenaRules);
+                SetNewMealIfSnakeAteAny(completePlayground, snakeBehavior, mealBehavior);
 
                 var display = displayArena.DisplayArena(completePlayground);
 
@@ -66,20 +68,16 @@ namespace Snake2._0
             }
         }
 
-        private static void CheckIfSnakeAteMeal(FieldType[][] completePlayground, ISnakeBehavior snakeBehavior, SnakePosition snakePosition, IArenaRules arenaRules)
+        private static void SetNewMealIfSnakeAteAny(FieldType[][] playGround, ISnakeBehavior snakeBehavior, IMealBehavior mealBehavior)
         {
-            if (completePlayground[snakePosition.HeadCoordinates.X + 1][snakePosition.HeadCoordinates.Y + 1] ==
-                FieldType.Meal
-                ||
-                completePlayground[snakePosition.HeadCoordinates.X - 1][snakePosition.HeadCoordinates.Y - 1] ==
-                FieldType.Meal)
-            {
-                snakeBehavior.SnakeNextParts();
-            }
-            else
-            {
-                arenaRules.SetMealOnArena(completePlayground);
-            }
+            CheckIfSnakeAteMeal(playGround, snakeBehavior, mealBehavior);
+        }
+
+        private static void CheckIfSnakeAteMeal(FieldType[][] playGround, ISnakeBehavior snakeBehavior,
+            IMealBehavior mealBehavior)
+        {
+            mealBehavior.SetMealOnArena(playGround);
+            //snakeBehavior.SnakeNextParts(mealBehavior.MealContainer());       TODO! KONTYNUACJA
         }
 
         private static void CheckIfSnakeHitBoundaries(FieldType[][] completePlayground, ISnakeBehavior snakeBehavior, SnakePosition snakePosition)

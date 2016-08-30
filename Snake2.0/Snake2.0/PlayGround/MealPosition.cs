@@ -4,6 +4,6 @@ namespace Snake2._0
 {
     public class MealPosition
     {
-        public Coordinates HeadCoordinates { get; set; } = new Coordinates(0, 0);
+        public Coordinates HeadCoordinates { get; set; }
     }
 }

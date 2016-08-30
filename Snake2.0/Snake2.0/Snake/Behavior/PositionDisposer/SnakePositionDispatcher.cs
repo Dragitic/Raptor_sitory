@@ -29,7 +29,7 @@ namespace Snake2._0.Snake
         }
         private void CheckIfSnakePositionIsOnBoundaries()
         {
-            if (_playGround[_snakePosition.HeadCoordinates.X][_snakePosition.HeadCoordinates.Y] == FieldType.Boundary)
+            if (_playGround[_snakePosition.HeadCoordinates.X][_snakePosition.HeadCoordinates.Y] != FieldType.Empty)
             {
                 RandomizeSnakePosition();
             }

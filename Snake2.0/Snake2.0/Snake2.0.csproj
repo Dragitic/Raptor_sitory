@@ -61,10 +61,13 @@
     <Compile Include="Assets\SnakeAssets.cs" />
     <Compile Include="DisplayGame\DisplayGame.cs" />
     <Compile Include="DisplayGame\IDisplayArena.cs" />
+    <Compile Include="MealManager\IMealBehavior.cs" />
+    <Compile Include="MealManager\MealBehavior.cs" />
+    <Compile Include="MealManager\Meal.cs" />
     <Compile Include="PlayGround\ArenaRules.cs" />
     <Compile Include="PlayGround\CreateGameArena.cs" />
     <Compile Include="PlayGround\MealPosition.cs" />
-    <Compile Include="PlayGround\void.cs" />
+    <Compile Include="PlayGround\FieldType.cs" />
     <Compile Include="PlayGround\ICreateGameArena.cs" />
     <Compile Include="PlayGround\IArenaRules.cs" />
     <Compile Include="Program.cs" />

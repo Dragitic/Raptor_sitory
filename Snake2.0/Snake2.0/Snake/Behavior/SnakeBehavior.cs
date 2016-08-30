@@ -36,9 +36,10 @@ namespace Snake2._0.Snake
             return snakeControl;
         }
 
-        public void SnakeNextParts()
+        public void SnakeNextParts(Meal.Meal meal)
         {
-            throw new System.NotImplementedException();
+            if (meal.Container.Count > 1)
+                meal.Container.Clear();
         }
 
         public void SnakeHitsBoundarys()
