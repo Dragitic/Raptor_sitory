@@ -23,11 +23,17 @@ namespace Snake2._0.Meal
             return _meal;
         }
 
+        public void CheckIfOnlyOneMealIsOnPlayground(Meal mealContainer)
+        {
+            if (mealContainer.Container.Count > 1)
+                mealContainer.Container.Clear();
+        }
+
         public Meal SetMealOnArena(FieldType[][] playGround)
         {
             _playGround = playGround;
             RandomizeMealPosition();
-            CheckIfMealPositionIsIrrelevant();
+            CheckIfMealPositionIsCorrect();
             AddMealToArena(CheckIfOnPlaygroundIsOnlyOneMeal());
 
             _meal.Container.Add(_mealPosition);
@@ -40,13 +46,15 @@ namespace Snake2._0.Meal
             return mealCounter;
         }
 
-        public void AddMealToArena(int mealConter)
+        public FieldType[][] AddMealToArena(int mealConter)
         {
             if (mealConter < 1)
                 _playGround[_mealPosition.HeadCoordinates.X][_mealPosition.HeadCoordinates.Y] = FieldType.Meal;
+
+            return _playGround;
         }
 
-        private void CheckIfMealPositionIsIrrelevant()
+        private void CheckIfMealPositionIsCorrect()
         {
             if (_playGround[_mealPosition.HeadCoordinates.X][_mealPosition.HeadCoordinates.Y] != FieldType.Empty)
             {

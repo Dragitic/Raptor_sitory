@@ -18,3 +18,13 @@ C:\Users\mdrazyk\Desktop\Raptor_sitory-SnakeGameMaster\Snake2.0\Snake.test\bin\D
 C:\Users\mdrazyk\Desktop\Raptor_sitory-SnakeGameMaster\Snake2.0\Snake.test\obj\Debug\Snake.test.csprojResolveAssemblyReference.cache
 C:\Users\mdrazyk\Desktop\Raptor_sitory-SnakeGameMaster\Snake2.0\Snake.test\obj\Debug\Snake.test.dll
 C:\Users\mdrazyk\Desktop\Raptor_sitory-SnakeGameMaster\Snake2.0\Snake.test\obj\Debug\Snake.test.pdb
+C:\Users\Mateusz\Desktop\Repo\Raptor_sitory\Snake2.0\Snake.test\bin\Debug\Snake.test.dll
+C:\Users\Mateusz\Desktop\Repo\Raptor_sitory\Snake2.0\Snake.test\bin\Debug\Snake.test.pdb
+C:\Users\Mateusz\Desktop\Repo\Raptor_sitory\Snake2.0\Snake.test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Mateusz\Desktop\Repo\Raptor_sitory\Snake2.0\Snake.test\bin\Debug\nunit.framework.dll
+C:\Users\Mateusz\Desktop\Repo\Raptor_sitory\Snake2.0\Snake.test\bin\Debug\Snake2.0.exe
+C:\Users\Mateusz\Desktop\Repo\Raptor_sitory\Snake2.0\Snake.test\bin\Debug\Snake2.0.pdb
+C:\Users\Mateusz\Desktop\Repo\Raptor_sitory\Snake2.0\Snake.test\bin\Debug\nunit.framework.xml
+C:\Users\Mateusz\Desktop\Repo\Raptor_sitory\Snake2.0\Snake.test\obj\Debug\Snake.test.csprojResolveAssemblyReference.cache
+C:\Users\Mateusz\Desktop\Repo\Raptor_sitory\Snake2.0\Snake.test\obj\Debug\Snake.test.dll
+C:\Users\Mateusz\Desktop\Repo\Raptor_sitory\Snake2.0\Snake.test\obj\Debug\Snake.test.pdb

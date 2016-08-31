@@ -38,7 +38,7 @@ namespace Snake.test
     //            int expected = 2;
 
     //            //When
-    //            _playGround = _snakeBehavior.SetCompletePlayGround();
+    //            _playGround = _snakeBehavior.SetPlayGroundWithSnake();
 
     //            //Than
     //            Assert.AreEqual(expected, _playGround[_xAxis][_yAxis]);
@@ -52,7 +52,7 @@ namespace Snake.test
     //            var key = ConsoleKey.RightArrow;
 
     //            //When
-    //            _playGround = _snakeBehavior.SetCompletePlayGround();
+    //            _playGround = _snakeBehavior.SetPlayGroundWithSnake();
     //            _moveSnake.MoveSnake(_playGround, key);
 
     //            //Than
@@ -68,7 +68,7 @@ namespace Snake.test
 
     //            //When
     //            _moveSnake.MoveSnake(_playGround, key);
-    //            _playGround = _snakeBehavior.SetCompletePlayGround();
+    //            _playGround = _snakeBehavior.SetPlayGroundWithSnake();
 
     //            //Than
     //            //Assert.IsTrue(_moveSnake.PlayGround[expected][_yAxis] == 2);
@@ -83,7 +83,7 @@ namespace Snake.test
 
     //            //When
     //            _moveSnake.MoveSnake(_playGround, key);
-    //            _playGround = _snakeBehavior.SetCompletePlayGround();
+    //            _playGround = _snakeBehavior.SetPlayGroundWithSnake();
 
     //            //Than
     //            //Assert.IsTrue(_moveSnake.PlayGround[_xAxis][expected] == 2);
@@ -98,7 +98,7 @@ namespace Snake.test
 
     //            //When
     //            _moveSnake.MoveSnake(_playGround, key);
-    //            _playGround = _snakeBehavior.SetCompletePlayGround();
+    //            _playGround = _snakeBehavior.SetPlayGroundWithSnake();
 
     //            //Than
     //            //Assert.IsTrue(_moveSnake.PlayGround[_xAxis][expected] == 2);

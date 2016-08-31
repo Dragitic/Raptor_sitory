@@ -72,7 +72,7 @@
     <Compile Include="PlayGround\IArenaRules.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Snake\Behavior\PositionDisposer\Coordinates.cs" />
+    <Compile Include="Assets\Coordinates.cs" />
     <Compile Include="Snake\Behavior\PositionDisposer\SnakePosition.cs" />
     <Compile Include="Snake\Control\ISnakeControl.cs" />
     <Compile Include="Snake\Control\SnakeControl.cs" />

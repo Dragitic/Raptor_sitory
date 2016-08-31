@@ -3,7 +3,8 @@
     public interface IMealBehavior
     {
         Meal SetMealOnArena(FieldType[][] playGround);
-        void AddMealToArena(int mealCounter);
+        FieldType[][] AddMealToArena(int mealCounter);
         Meal MealContainer();
+        void CheckIfOnlyOneMealIsOnPlayground(Meal mealContainer);
     }
 }

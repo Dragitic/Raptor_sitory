@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Snake2._0.Meal;
 using Snake2._0.Snake.Behavior;
 
 namespace Snake2._0.Snake
@@ -8,6 +9,7 @@ namespace Snake2._0.Snake
     {
         private FieldType[][] _playGround;
         private SnakePositionDispatcher _positionDispatcher;
+        private static int _ateMeals = 0;
 
         public SnakePosition SetSnakeStartPosition(FieldType[][] playGround)
         {
@@ -18,7 +20,7 @@ namespace Snake2._0.Snake
 
             return startPosition;
         }
-        public FieldType[][] SetCompletePlayGround()
+        public FieldType[][] SetPlayGroundWithSnake()
         {
             try
             {
@@ -36,19 +38,31 @@ namespace Snake2._0.Snake
             return snakeControl;
         }
 
-        public void SnakeNextParts(Meal.Meal meal)
+        public void SnakeHitsBoundarys(FieldType[][] completePlayground, ISnakeBehavior snakeBehavior, SnakePosition snakePosition)
         {
-            if (meal.Container.Count > 1)
-                meal.Container.Clear();
+            if (completePlayground[snakePosition.HeadCoordinates.X + 1][snakePosition.HeadCoordinates.Y + 1] ==
+                FieldType.Boundary
+                ||
+                completePlayground[snakePosition.HeadCoordinates.X - 1][snakePosition.HeadCoordinates.Y - 1] ==
+                FieldType.Boundary)
+            {
+                Console.Clear();
+                Console.WriteLine("Game Over!!");
+                Console.ReadKey();
+                var exit = Environment.ExitCode;
+                Environment.Exit(exit);
+            }
         }
 
-        public void SnakeHitsBoundarys()
+        public void SnakeNextParts(FieldType[][] completePlayground, SnakePosition snakePosition, IMealBehavior meal)
         {
-            Console.Clear();
-            Console.WriteLine("Game Over!!");
-            Console.ReadKey();
-            var exit = Environment.ExitCode;
-            Environment.Exit(exit);
+            var foo = meal.MealContainer();
+        }
+
+        public void SnakeAteMeal(FieldType[][] completePlayground, SnakePosition snakePosition)
+        {
+            if (completePlayground[snakePosition.HeadCoordinates.X + 1][snakePosition.HeadCoordinates.Y + 1] == FieldType.Meal)
+                _ateMeals++;
         }
     }
 }
