@@ -10,7 +10,7 @@
         <Label x:Name="votingCalculatorLabel" Content="Voting Calculator" HorizontalAlignment="Left" Margin="87,10,0,231" VerticalAlignment="Center" FontSize="48" FontFamily="Arial" Height="85"/>
         <Label x:Name="nameLabel" Content="Name" HorizontalAlignment="Left" Margin="40,100,0,0" VerticalAlignment="Top" FontSize="16" Height="39" Width="70" FontFamily="Arial"/>
         <Label x:Name="lastNameLable" Content="Last Name" HorizontalAlignment="Left" Margin="40,150,0,0" VerticalAlignment="Top" FontSize="16" Height="40" Width="115" FontFamily="Arial"/>
-        <Label x:Name="pinLabel" Content="PIN" HorizontalAlignment="Left" Margin="40,201,0,0" VerticalAlignment="Top" FontSize="16" Height="39" Width="47" FontFamily="Arial"/>
+        <Label x:Name="pinLabel" Content="ID" HorizontalAlignment="Left" Margin="40,201,0,0" VerticalAlignment="Top" FontSize="16" Height="39" Width="47" FontFamily="Arial"/>
         <TextBox x:Name="nameTextBox" HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" VerticalAlignment="Top" Width="340" Margin="140,100,0,0" FontSize="16"/>
         <TextBox x:Name="lastNameTextBox" HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" VerticalAlignment="Top" Width="340" Margin="140,150,0,0" FontSize="16"/>
         <TextBox x:Name="pinTextBox" HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" VerticalAlignment="Top" Width="340" Margin="140,201,0,0" FontSize="16"/>

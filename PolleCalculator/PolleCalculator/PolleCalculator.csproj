@@ -39,6 +39,10 @@
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json.Schema, Version=2.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.Schema.2.0.6\lib\net45\Newtonsoft.Json.Schema.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Web" />
@@ -60,11 +64,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="DataSpecification\Downloader\CandidatesAndParty.cs" />
+    <Compile Include="DataSpecification\DataBaseObjects\BannedVoters.cs" />
+    <Compile Include="DataSpecification\Downloader\CandidatesAndPartyContent.cs" />
     <Compile Include="DataSpecification\Downloader\IStoreJsonFile.cs" />
     <Compile Include="DataSpecification\Downloader\IJsonFilesDownloader.cs" />
-    <Compile Include="DataSpecification\Downloader\BannedVoters.cs" />
+    <Compile Include="DataSpecification\Downloader\BannedVotersContent.cs" />
     <Compile Include="DataSpecification\Downloader\JsonFilesDownloader.cs" />
+    <Compile Include="DataSpecification\DataBaseObjects\IncorrectVotes.cs" />
+    <Compile Include="DataSpecification\Parser\BannedVotersParser.cs" />
+    <Compile Include="DataSpecification\DataBaseObjects\CandidatesObject.cs" />
+    <Compile Include="DataSpecification\Parser\IJsonParser.cs" />
+    <Compile Include="DataSpecification\Parser\CandidatesParser.cs" />
+    <Compile Include="DataSpecification\Parser\PartiesParser.cs" />
+    <Compile Include="DataSpecification\Parser\VotersParser.cs" />
+    <Compile Include="DataSpecification\DataBaseObjects\Voters.cs" />
     <Compile Include="DataSpecification\VoterDispatcher\IVoterDataBaseDispatcher.cs" />
     <Compile Include="ScoreWindow.xaml.cs">
       <DependentUpon>ScoreWindow.xaml</DependentUpon>
@@ -131,7 +144,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DataSpecification\Parser\" />
     <Folder Include="PollScoreSpecification\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

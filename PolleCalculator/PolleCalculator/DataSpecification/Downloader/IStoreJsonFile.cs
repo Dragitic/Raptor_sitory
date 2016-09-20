@@ -2,7 +2,6 @@
 {
     public interface IStoreJsonFile
     {
-        void GetFile();
-        void SaveFile();
+        string GetJsonFile();
     }
 }
