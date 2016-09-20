@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolleCalculator", "PolleCalculator\PolleCalculator.csproj", "{968D6A94-F4A2-4735-A441-02C653D26C4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolleCalculatorTest", "PolleCalculatorTest\PolleCalculatorTest.csproj", "{AD3FE65B-2911-41ED-85CF-D97C2B601668}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{968D6A94-F4A2-4735-A441-02C653D26C4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{968D6A94-F4A2-4735-A441-02C653D26C4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{968D6A94-F4A2-4735-A441-02C653D26C4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{968D6A94-F4A2-4735-A441-02C653D26C4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD3FE65B-2911-41ED-85CF-D97C2B601668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD3FE65B-2911-41ED-85CF-D97C2B601668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD3FE65B-2911-41ED-85CF-D97C2B601668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD3FE65B-2911-41ED-85CF-D97C2B601668}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
