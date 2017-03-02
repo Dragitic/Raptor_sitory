@@ -1,0 +1,6 @@
+C:\Users\Mateusz\Desktop\CodeChallenge\Challenge_1\Challenge_1\bin\Debug\Challenge_1.exe.config
+C:\Users\Mateusz\Desktop\CodeChallenge\Challenge_1\Challenge_1\bin\Debug\Challenge_1.exe
+C:\Users\Mateusz\Desktop\CodeChallenge\Challenge_1\Challenge_1\bin\Debug\Challenge_1.pdb
+C:\Users\Mateusz\Desktop\CodeChallenge\Challenge_1\Challenge_1\obj\Debug\Challenge_1.csprojResolveAssemblyReference.cache
+C:\Users\Mateusz\Desktop\CodeChallenge\Challenge_1\Challenge_1\obj\Debug\Challenge_1.exe
+C:\Users\Mateusz\Desktop\CodeChallenge\Challenge_1\Challenge_1\obj\Debug\Challenge_1.pdb

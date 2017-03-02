@@ -1,0 +1,5 @@
+C:\Users\Mateusz\Desktop\CodeChallenge\Challenge_1\Delegate\bin\Debug\Delegate.exe.config
+C:\Users\Mateusz\Desktop\CodeChallenge\Challenge_1\Delegate\bin\Debug\Delegate.exe
+C:\Users\Mateusz\Desktop\CodeChallenge\Challenge_1\Delegate\bin\Debug\Delegate.pdb
+C:\Users\Mateusz\Desktop\CodeChallenge\Challenge_1\Delegate\obj\Debug\Delegate.exe
+C:\Users\Mateusz\Desktop\CodeChallenge\Challenge_1\Delegate\obj\Debug\Delegate.pdb

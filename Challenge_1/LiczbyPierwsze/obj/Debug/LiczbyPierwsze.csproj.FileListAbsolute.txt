@@ -1,0 +1,6 @@
+C:\Users\Mateusz\Desktop\CodeChallenge\Challenge_1\LiczbyPierwsze\bin\Debug\LiczbyPierwsze.exe.config
+C:\Users\Mateusz\Desktop\CodeChallenge\Challenge_1\LiczbyPierwsze\bin\Debug\LiczbyPierwsze.exe
+C:\Users\Mateusz\Desktop\CodeChallenge\Challenge_1\LiczbyPierwsze\bin\Debug\LiczbyPierwsze.pdb
+C:\Users\Mateusz\Desktop\CodeChallenge\Challenge_1\LiczbyPierwsze\obj\Debug\LiczbyPierwsze.csprojResolveAssemblyReference.cache
+C:\Users\Mateusz\Desktop\CodeChallenge\Challenge_1\LiczbyPierwsze\obj\Debug\LiczbyPierwsze.exe
+C:\Users\Mateusz\Desktop\CodeChallenge\Challenge_1\LiczbyPierwsze\obj\Debug\LiczbyPierwsze.pdb
